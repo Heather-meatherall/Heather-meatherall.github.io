@@ -126,7 +126,7 @@ a {
 .typewriter
 {
   overflow: hidden;
-  border-right: 5px solid #b20d40; /*cursor*/
+  border-right: 5px solid #b20d40; 
   white-space: nowrap;
   margin: 0 align;
   letter-spacing: 0.05em;
@@ -150,9 +150,9 @@ a {
 .flip
 {
   position: relative; 
-      text-decoration: none; 
-      transform-style: preserve-3d; 
-      transition: ease-in-out 3s; 
+  /* text-decoration: none;  */
+  transform-style: preserve-3d; 
+  transition: ease-in-out 3s; 
 }
 
 .flip:hover
@@ -162,7 +162,7 @@ a {
 
 .flip span
 {
-  display: block; 
-      font-weight: bold; 
-      transform-style: preserve-3d; 
+  /* display: block; 
+  font-weight: bold;  */
+  transform-style: preserve-3d; 
 }
