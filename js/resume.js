@@ -26,14 +26,18 @@
   });
 
 })(jQuery); // End of use strict
+let side = 1;
 
 function change_profile()
 {
-if (document.getElementById("profileImage").src == "img/profile.jpg"){
-        document.getElementById("profileImage").src = "img/profile2.png"
-    } else {
-        document.getElementById("profileImage").src = "img/profile.jpg";
-        console.log(document.getElementById("profileImage").src )
-    }
-    console.log('yes')
+  if(side == 1)
+  {
+    document.getElementById("profileImage").src = 'img/profile.jpg';
+    side = 2;
+  }
+  else
+  {
+    document.getElementById("profileImage").src = 'img/profile2.jpg';
+    side = 1;
+  }
 }
