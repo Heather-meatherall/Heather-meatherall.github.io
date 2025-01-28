@@ -26,3 +26,14 @@
   });
 
 })(jQuery); // End of use strict
+
+function change_profile()
+{
+if (document.getElementById("profileImage").src == "img/profile.jpg"){
+        document.getElementById("profileImage").src = "img/profile2.png"
+    } else {
+        document.getElementById("profileImage").src = "img/profile.jpg";
+        console.log(document.getElementById("profileImage").src )
+    }
+    console.log('yes')
+}
