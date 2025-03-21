@@ -126,11 +126,11 @@ a {
 .typewriter
 {
   overflow: hidden;
-  border-right: 5px solid #b20d40; 
+  border-right: 5px solid mediumpurple;
   white-space: nowrap;
   margin: 0 align;
   letter-spacing: 0.05em;
-  animation: 
+  animation:
     typing 3.5s steps(40,end),
     blink-caret 800ms steps(100) infinite;
 }
@@ -149,10 +149,10 @@ a {
 
 .flip
 {
-  position: relative; 
+  position: relative;
   /* text-decoration: none;  */
-  transform-style: preserve-3d; 
-  transition: ease-in-out 3s; 
+  transform-style: preserve-3d;
+  transition: ease-in-out 3s;
 }
 
 .flip:hover
@@ -160,9 +160,7 @@ a {
   transform: rotateX(180deg);
 }
 
-.flip span
+.flip span*/
 {
-  /* display: block; 
-  font-weight: bold;  */
-  transform-style: preserve-3d; 
+  transform-style: preserve-3d;
 }
