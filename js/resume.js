@@ -26,6 +26,7 @@
   });
 
 })(jQuery); // End of use strict
+
 let side = 1;
 
 function change_profile()
