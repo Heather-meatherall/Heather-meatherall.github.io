@@ -33,12 +33,12 @@ function change_profile()
 {
   if(side == 1)
   {
-    document.getElementById("profileImage").src = 'img/profile.jpg';
+    document.getElementById("profileImage").src = 'img/profile2.jpg';
     side = 2;
   }
   else
   {
-    document.getElementById("profileImage").src = 'img/profile2.jpg';
+    document.getElementById("profileImage").src = 'img/profile.jpg';
     side = 1;
   }
 }
