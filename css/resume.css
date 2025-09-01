@@ -23,11 +23,14 @@ h6 {
   font-family: 'Saira Extra Condensed', serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40; }
+  color: #343a40; 
+}
 
 h1 {
   font-size: 6rem;
-  line-height: 5.5rem; }
+  line-height: 5.5rem; 
+
+}
 
 h2 {
   font-size: 3.5rem; }
@@ -123,36 +126,12 @@ a {
   border: 0.5rem solid white;  
 }
 
-.typewriter
-{
-  overflow: hidden;
-  border-right: 5px solid mediumpurple;
-  white-space: nowrap;
-  margin: 0 align;
-  letter-spacing: 0.05em;
-  animation:
-    typing 3.5s steps(40,end),
-    blink-caret 800ms steps(100) infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret 
-{
-  from, to { border-color: transparent }
-  50% { border-color: pink; }
-}
-
 .flip
 {
-  position: relative;
+  position: relative; 
   /* text-decoration: none;  */
-  transform-style: preserve-3d;
-  transition: ease-in-out 3s;
+  transform-style: preserve-3d; 
+  transition: ease-in-out 3s; 
 }
 
 .flip:hover
@@ -160,7 +139,37 @@ a {
   transform: rotateX(180deg);
 }
 
-.flip span*/
+.flip span
 {
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; 
+}
+
+.typewriter
+{
+  overflow: hidden;
+  border-right: 5px solid #bf5064;
+  white-space: nowrap;
+  margin: 0 align;
+  letter-spacing: 0.05em;
+  animation:
+    typing 3.5s steps(40,end),
+    blink-caret 800ms steps(100);
+}
+
+@keyframes typing {
+  from{width: 0}
+  to {width: 100%}
+}
+
+@keyframes blink-caret {
+  from, to {boder-color: transparent}
+  50% {border-colour: blue}
+}
+
+.container
+{
+  /* height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
 }
