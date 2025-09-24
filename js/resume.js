@@ -42,3 +42,15 @@ function change_profile()
     side = 1;
   }
 }
+
+// When the user clicks on <div>, open the popup
+function popUpFunction(val) 
+{
+  const popupElement = document.getElementById(val);
+  const popup = popupElement
+  popup.classList.toggle("show");
+}
+
+
+
+
