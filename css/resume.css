@@ -7,7 +7,7 @@
 body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
-  color: #868e96; }
+  color: #170108; }
 
 @media (min-width: 992px) {
   body {
@@ -23,7 +23,7 @@ h6 {
   font-family: 'Saira Extra Condensed', serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40; 
+  color: #170108; 
 }
 
 h1 {
@@ -43,10 +43,11 @@ h2 {
 
 .list-social-icons a {
   color: #495057; }
-  /* .list-social-icons a:hover {
+
+.list-social-icons a:hover {
     color: #bf5064; 
-  }  */
-  .list-social-icons a .fa-lg {
+  } 
+.list-social-icons a .fa-lg {
     font-size: 1.75rem; }
 
 .list-icons {
@@ -125,6 +126,18 @@ a {
 {
   border: 0.5rem solid white;  
 }
+
+
+iframe {
+  height: 500px;
+  width: 33%;
+}
+iframe: hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
 
 .flip
 {
