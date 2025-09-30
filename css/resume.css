@@ -162,11 +162,11 @@ iframe: hover {
   overflow: hidden;
   border-right: 5px solid #bf5064;
   white-space: nowrap;
-  margin: 0 align;
+  margin: 0 auto;
   letter-spacing: 0.05em;
   animation:
     typing 3.5s steps(40,end),
-    blink-caret 800ms steps(100);
+    blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
@@ -176,7 +176,7 @@ iframe: hover {
 
 @keyframes blink-caret {
   from, to {boder-color: transparent}
-  50% {border-colour: blue}
+  25% {border-colour: #bf5064}
 }
 
 .popup {
