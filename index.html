@@ -62,6 +62,8 @@
             <a class="nav-link js-scroll-trigger" href="#awards">Achievements</a>
           </li>
         </ul>
+        
+
       </div>
     </nav>
 
@@ -104,7 +106,62 @@
                 </span>
               </a>
             </li>
+            
           </ul>
+          <!--
+  OTU Webring HTML Snippet
+  Copy and paste this into your website's footer or wherever you want the webring to appear
+-->
+
+<div id="otu-webring" style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 1rem;">
+  <a
+    id="webring-prev"
+    href="#"
+    style="display: flex; align-items: center; justify-content: center; color: #71717a; font-size: 16px; text-decoration: none; padding: 0.5rem; border-radius: 4px; transition: all 0.2s ease; border: none; background: transparent; cursor: pointer;"
+    onmouseenter="this.style.color='#000000'; this.style.backgroundColor='rgba(255, 255, 255, 0.1)';"
+    onmouseleave="this.style.color='#71717a'; this.style.backgroundColor='transparent';"
+    title="Previous site"
+  >
+    ←
+  </a>
+  
+  <a href="https://otu-ring.com" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; border: none;">
+    <img src="https://otu-ring.com/assets/ontariotech.svg" alt="OTU Webring" style="height: 20px; width: auto; opacity: 0.7; transition: opacity 0.2s ease; filter: brightness(0) saturate(100%) invert(50%) sepia(4%) saturate(735%) hue-rotate(201deg) brightness(86%) contrast(89%);" />
+  </a>
+
+  <a
+    id="webring-next"
+    href="#"
+    style="display: flex; align-items: center; justify-content: center; color: #71717a; font-size: 16px; text-decoration: none; padding: 0.5rem; border-radius: 4px; transition: all 0.2s ease; border: none; background: transparent; cursor: pointer;"
+    onmouseenter="this.style.color='#000000'; this.style.backgroundColor='rgba(255, 255, 255, 0.1)';"
+    onmouseleave="this.style.color='#71717a'; this.style.backgroundColor='transparent';"
+    title="Next site"
+  >
+    →
+  </a>
+</div>
+
+<script>
+  (function() {
+    // Get current site hostname and remove www. prefix
+    let hostname = window.location.hostname;
+    if (hostname.startsWith('www.')) {
+      hostname = hostname.substring(4);
+    }
+    
+    // Set up navigation links
+    const prevLink = document.getElementById('webring-prev');
+    const nextLink = document.getElementById('webring-next');
+    
+    if (prevLink) {
+      prevLink.href = 'https://otu-ring.com/prev.html?from=' + encodeURIComponent(hostname);
+    }
+    
+    if (nextLink) {
+      nextLink.href = 'https://otu-ring.com/next.html?from=' + encodeURIComponent(hostname);
+    }
+  })();
+</script>
           </section>
 
           <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
