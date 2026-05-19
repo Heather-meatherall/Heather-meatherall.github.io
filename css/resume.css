@@ -45,7 +45,7 @@ h2 {
   color: #495057; }
 
 .list-social-icons a:hover {
-    color: #bf5064; 
+    color: #b20d40; 
   } 
 .list-social-icons a .fa-lg {
     font-size: 1.75rem; }
@@ -53,7 +53,7 @@ h2 {
 .list-icons {
   font-size: 3rem; }
   .list-icons .list-inline-item i:hover {
-    color: #bf5064; }
+    color: #b20d40; }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
@@ -129,7 +129,7 @@ a {
 
 
 iframe {
-  height: 500px;
+  height: 900px;
   width: 100%;
 }
 iframe: hover {
@@ -142,7 +142,6 @@ iframe: hover {
 .flip
 {
   position: relative; 
-  /* text-decoration: none;  */
   transform-style: preserve-3d; 
   transition: ease-in-out 3s; 
 }
@@ -229,4 +228,46 @@ iframe: hover {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+button {
+  background-color: #b20d40;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
+
+button:hover {
+  background-color: #bf5064;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#header:hover {
+ color: #b20d40;
+}
+
+.pink
+{
+  color: #b20d40;
+}
+
+.white
+{
+  color: #d0d0d0 !important;
+}
+
+.white:hover, .white:focus
+{
+  color: white !important;
 }
