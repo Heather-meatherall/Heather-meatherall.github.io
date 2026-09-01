@@ -55,10 +55,12 @@ function popUpFunction(val)
 const mySites = [
     { name: "DnD Dice Roller", url: "https://diceroller.neocities.org", description: "A dice roller based on the different ways you roll dice in a dnd game"},
     { name: "When Are The Jays On?", url: "https://arethejayson.vercel.app/",  description: "A website to help Blue Jay fans find out when and where the Jays are playing."},
-    { name: "Barbie Digital Radio", url: "https://heather-meatherall.github.io/BarbieDigitalRadio/",  description: "A music player themed after the Barbie Boombox from the 1990s."},
+    { name: "Barbie Digital Radio", url: "https://heather-meatherall.github.io/BarbieDigitalRadio/",  description: "A music player themed after the Babrie Boombox from the 1990s."},
     { name: "Heather Meatherall's Poetry Portfolio", url: "https://heather-meatherall.github.io/PoetryPortfolio/",  description: "Heather Meatherall's Poetry Portfolio"},
     { name: "Comparing DnD Stats", url: "https://heather-meatherall.github.io/DnD_Stats/",   description: "A data visualization of dungeons and dragons stats, both real world and in game"},
 ];
+
+let siteIndex = 0;
 
 function changeSite(val)
 {
@@ -68,9 +70,7 @@ function changeSite(val)
   const iframeLink = document.getElementById("iframeLink");
   const description = document.getElementById("description");
 
-  let site = (o => o.name === header.textContent);
-  let siteIndex = mySites.findIndex(site);
-
+  
   if (val == 'back')
   {
     console.log(siteIndex == '0');
@@ -83,10 +83,11 @@ function changeSite(val)
     }
     else
     {
-      link.setAttribute('href', mySites[siteIndex-1].url);
-      header.textContent = mySites[siteIndex-1].name;
-      iframeLink.setAttribute('src', mySites[siteIndex-1].url)
-      description.textContent = mySites[siteIndex-1].description;
+      siteIndex -= 1;
+      link.setAttribute('href', mySites[siteIndex].url);
+      header.textContent = mySites[siteIndex].name;
+      iframeLink.setAttribute('src', mySites[siteIndex].url)
+      description.textContent = mySites[siteIndex].description;
     }
 
   }
@@ -94,10 +95,12 @@ function changeSite(val)
   {
     if (siteIndex != len-1)
     {
-      link.setAttribute('href', mySites[siteIndex+1].url);
-      header.textContent = mySites[siteIndex+1].name;
-      iframeLink.setAttribute('src', mySites[siteIndex+1].url)
-      description.textContent = mySites[siteIndex+1].description;
+      siteIndex += 1;
+      link.setAttribute('href', mySites[siteIndex].url);
+      header.textContent = mySites[siteIndex].name;
+      iframeLink.setAttribute('src', mySites[siteIndex].url)
+      description.textContent = mySites[siteIndex].description;
+
     }
     else
     {
