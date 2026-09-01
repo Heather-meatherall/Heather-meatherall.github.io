@@ -55,7 +55,7 @@ function popUpFunction(val)
 const mySites = [
     { name: "DnD Dice Roller", url: "https://diceroller.neocities.org", description: "A dice roller based on the different ways you roll dice in a dnd game"},
     { name: "When Are The Jays On?", url: "https://arethejayson.vercel.app/",  description: "A website to help Blue Jay fans find out when and where the Jays are playing."},
-    { name: "Barbie Digital Radio", url: "https://heather-meatherall.github.io/BarbieDigitalRadio/",  description: "A music player themed after the Babrie Boombox from the 1990s."},
+    { name: "Barbie Digital Radio", url: "https://heather-meatherall.github.io/BarbieDigitalRadio/",  description: "A music player themed after the Barbie Boombox from the 1990s."},
     { name: "Heather Meatherall's Poetry Portfolio", url: "https://heather-meatherall.github.io/PoetryPortfolio/",  description: "Heather Meatherall's Poetry Portfolio"},
     { name: "Comparing DnD Stats", url: "https://heather-meatherall.github.io/DnD_Stats/",   description: "A data visualization of dungeons and dragons stats, both real world and in game"},
 ];
